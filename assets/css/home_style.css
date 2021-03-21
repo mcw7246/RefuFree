@@ -1,37 +1,57 @@
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-li{
-    float: center;
-
-}
-li a{
-    display: block;
-    color: white;
+.topbar{
+    width: 100%;
+    background-color: burlywood;
+    height: 75px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    display: inline-block;
-}
-body{
-    width:100%;
-
-}
-li a:hover:not(.active){
-    background-color: brown;
-}
-#profile{
-  display: inline-block;
-  float: right;
-  border-radius: 50%;
-  background-color: white;
-  width: 50px;
-  height: 50px;
 }
 #home{
-  float: left;
+    float: left;
 }
+#profile{
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+    float: right;
+    height: 75px;
+    width: 75px;
+}
+
+.right-column{
+    border-style: solid;
+    float: right;
+    width: 20%;
+}
+
+a:link{
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.left-column{
+    width: 75%;
+    float: left;
+    text-align: left;
+    border-style: solid;
+}
+#announcements{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-style: solid;
+}
+
+#recent-activities{
+    border-style: solid
+}
+
+.bottom-nav{
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background-color: burlywood;
+    height: 10%;
+    text-align: center;
+    padding: 5px;
+}
+
+
