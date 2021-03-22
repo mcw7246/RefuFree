@@ -1,10 +1,12 @@
 body{
     height: 100%;
     margin: 0;
+    font-family: 'Montserrat', serif;
+    color: #1D3557;
 }
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #457B9D;
     width: 100%;
     align-items: center;
     display: inline-block;
@@ -35,7 +37,7 @@ body{
     margin-right: auto;
 }
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #F1FAEE;
     color: black;
 }
 .topnav a.active {
@@ -71,7 +73,7 @@ body{
 
 .bottombar{
     overflow: hidden;
-    background-color: #333;
+    background-color: #457B9D;
     width: 100%;
     align-items: center;
     display: inline-block;

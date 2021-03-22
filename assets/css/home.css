@@ -1,3 +1,5 @@
+
+
 .content{
     width: 100%;
 }
@@ -6,9 +8,12 @@
     margin-top: 5%;
     width: 20%;
     float: right;
-    border-style: solid ;
     height: 100vh;
     text-align: center;
+    border-radius: 25px;
+    background-color: #E9ECEF;
+    border-style: #DEE2E6 solid;
+
 
 }
 .left-column{
@@ -16,7 +21,6 @@
     margin-top: 5%;
     margin-bottom: 5%;
     float: left;
-    border-style: solid;
     display: flex;
     flex-flow: column;
     height: 100vh;
@@ -26,6 +30,8 @@
 
 .left-column div{
     margin: 1%;
-    border-style: solid;
+    border-style: #DEE2E6 solid;
     flex: 1 1 auto;
+    border-radius: 25px;
+    background-color: #E9ECEF;
 }
