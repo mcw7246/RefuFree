@@ -3,6 +3,7 @@
 .content{
     width: 100%;
 }
+
 .right-column{
     margin-right: 0%;
     margin-top: 5%;
@@ -13,9 +14,8 @@
     border-radius: 25px;
     background-color: #E9ECEF;
     border-style: #DEE2E6 solid;
-
-
 }
+
 .left-column{
     width: 75%;
     margin-top: 5%;
