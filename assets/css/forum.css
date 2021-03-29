@@ -24,7 +24,7 @@
     float: left;
     display: block;
     height: 100vh;
-    text-align: center;
+    text-align: left;
     align-content: center;
     border-radius: 25px;
     background-color: #E9ECEF;
@@ -34,13 +34,30 @@
 .left-column div{
     margin: 1%;
     flex: 1 1 auto;
+    
 }
 
 .right-column div{
     margin: 1%;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     background-color: #E9ECEF;
     border-radius: 25px;
+    height: 10vh;
+}
+
+.Category{
+    width: 98%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 3%;
+    float: left;
+    display: block;
+    height: 10vh;
+    text-align: left;
+    align-content: center;
+    border-radius: 15px;
+    background-color: #D6DBE0;
+    border-style: #D6DBE0 solid;
 }
 
 button#latest{
