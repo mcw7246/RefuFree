@@ -1,0 +1,52 @@
+#profilePic{
+    border-radius: 50%;
+}
+.info{
+    margin-left: 5%;
+    margin-bottom: 3%;
+    text-align: left;
+    width: 90%;
+}
+.info label{
+    display: block;
+    font-size: 20px;
+    clear: both;
+}
+.content{
+    background-color: #E9ECEF;    
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 25px;
+    text-align: center;
+}
+.description{
+    width: 100%;
+    margin-top: 5px;
+    height: 200px;
+    background-color: #CDEAE5;
+    padding: 5px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+#save{
+    float: right;
+    width: 10%;
+    height: 5%;
+    margin: 5%;
+}
+.forms{
+   display: flex;
+}
+.labels label{
+    float: left;
+    display: block;
+    margin: 5%;
+}
+.userInputs input{
+    display: block;
+    margin: 5%;
+    width: auto;
+}
+button#save{
+    top: 0;
+}

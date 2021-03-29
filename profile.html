@@ -4,7 +4,7 @@
         <meta charset="UTF-8" content="width=divice-width">
 
         <link rel="stylesheet" href = "assets/css/general.css">
-        <link rel="stylesheet" href = "assets/css/home.css">
+        <link rel="stylesheet" href = "assets/css/profile.css">
         <link rel="import" href="homepage.html">
         <script src="assets/js/page.js"></script>
 
@@ -13,19 +13,51 @@
 
     <body>
         <div class="topnav" id="myTopBar">
-            <a href="homepage.html" id="home"><img src="assets/pictures/RefuFree_Logo.jpg" width=70px height=70px></a>
+            <a href="homepage.html" id="home"><img src="assets/pictures/logo_transparent.jpg" width=70px height=70px></a>
             <a href="forum.html" id="middle">Forum</a>
             <a href="chat.html" id="middle">Chat</a>
             <a href="education.html" id="middle">Education</a>
-            <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=70px height=70px></a>
+            <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=50px height=50px></a>
         </div>
         
+        <div class="content">
+            <img src="assets/pictures/profile_picture.png" width=75px height=75px id="profilePic">
+            <button id="save">Edit</button>
+            <div class="info">
+                <div class="forms">
+                    <div class="labels">
+                        <label>Name: </label>
+                        <label>Nickname: </label>
+                        <label>Username: </label>
+                        <label>Email: </label>
+                        <label>Age: </label>
+                        <label>Gender: </label>
+                    </div>
+    
+                    <div class="userInputs">
+                        <input type="text" id="name" class="userInput" value="Bob Marley" readonly>
+                        <input type="text" id="nickname" class="userInput" readonly>
+                        <input type="text" id="username" class="userInput" value="therealbobmarley" readonly>
+                        <input type="text" id="email" class="userInput" value="bobmarley1234@gmail.com" readonly>
+                        <input type="text" id="age" class="userInput" readonly>
+                        <input type="text" id="gender" class="userInput" readonly>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>User description: </h3>
+                    <p>I am a local to Rochester, NY. I have lived here for most of my life but traveled the world. I would love to get others aqcuiainted to the Rochester area as much as I can.</p>
+                </div>
+            
+
+            </div>
+
+        </div>
 
         <div class="bottombar">
             <a href="#">About</a>
             <a href="#">Support</a>
             <a href="#">Privacy</a>
-            <a href="#">DHS</a>"
+            <a href="#">DHS</a>
             <a href="#">TOS</a>
         </div>
 
