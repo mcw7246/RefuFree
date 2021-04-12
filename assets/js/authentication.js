@@ -1,14 +1,25 @@
-import sqlite from 'sqlite3';
-
+const users = {"local" : "password", "refugee": "password"}
+var logged_in = false;
 function authentication(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-    
-    var http = require('http');
 
-    http.createServer(function(req, res){
-        res.writeHead(200, {'Content-Type': 'text/plain'});
-        res.end('Hello');
-    }).listen(8080);
-    
+    if ((users[username] != undefined) && (password == users[username] )){
+        var url = location.href;
+        var newUrl = url.replace("/login.html", "/homepage.html");
+        logged_in = true;
+        console.log(newUrl)
+        return window.location.replace(newUrl);
+        
+    }
+    else{
+        console.log("Login unsuccessful.");
+        var loginerror = document.createElement("p");
+        var errorMessage = document.createTextNode("Login unsuccessful.");
+        loginerror.appendChild(errorMessage);
+        var element = document.getElementById("login");
+        element.appendChild(loginerror);
+
+        window.location = location.href;
+    }
 }

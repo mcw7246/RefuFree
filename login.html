@@ -2,12 +2,10 @@
 <html lan="en">
     <head>
         <meta charset="UTF-8" content="width=divice-width">
-
+        <script type="text/javascript" src="assets/js/authentication.js"></script>
         <link rel="stylesheet" href = "assets/css/general.css">
         <link rel="stylesheet" href = "assets/css/login.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <script src="assets/js/authentication.js"></script>
-
         <title>RefuFree</title>
     </head>
 
@@ -22,14 +20,14 @@
         
         <div class="content">
             <h1>Log into RefuFree</h1>
-            <form onclick="authentication()" method="POST">
+            <form onsubmit = "return authentication()" id="login">
                 <label id="info">Username:</label>
                 <input type="text" id="username">
                 <br>
                 <label id="info">Password: </label>
                 <input type="password" id="password">
                 <br>
-                <button type="submit" id="info">Log In</button>
+                <button type="submit"  id="info">Log In</button>
             </form>
    
         </div>
