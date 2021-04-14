@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+    margin: 0;
+}
 body{
     height: 100%;
     margin: 0;
@@ -22,11 +26,11 @@ body{
     font-size: 17px;
 }
 
-.topnav a#profile {
+.topnav button#profile {
     float: right;
 }
 
-.topnav a#profile img{
+.topnav button#profile img{
     border-radius: 50%;
 }
 .topnav a#home{
@@ -72,11 +76,10 @@ body{
 }
 
 .bottombar{
-    overflow: hidden;
     background-color: #457B9D;
     width: 100%;
     align-items: center;
-    display: inline-block;
+    margin-bottom: -50px;
     text-align: center;
     bottom: 0;
 }
@@ -92,4 +95,14 @@ body{
 .bottombar a:hover {
     background-color: #ddd;
     color: black;
+}
+#profile{
+    border-radius: 50%;
+}
+.menu{
+    display: none;
+    position: absolute;
+}
+#dropdownButton:hover .menu{
+    display:block;
 }

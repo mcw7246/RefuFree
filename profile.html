@@ -6,8 +6,7 @@
         <link rel="stylesheet" href = "assets/css/general.css">
         <link rel="stylesheet" href = "assets/css/profile.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="import" href="homepage.html">
-        <script src="assets/js/page.js"></script>
+        <script src="assets/js/profile.js"></script>
 
         <title>RefuFree</title>
     </head>
@@ -23,7 +22,7 @@
         
         <div class="content">
             <img src="assets/pictures/profile_picture.png" width=75px height=75px id="profilePic">
-            <button id="save">Edit</button>
+            <button id="saveEdit" onclick="changeMode()" value="edit">Edit</button>
             <div class="info">
                 <div class="forms">
                     <div class="labels">
@@ -54,13 +53,13 @@
 
         </div>
 
-        <div class="bottombar">
-            <a href="#">About</a>
+        <footer class="bottombar">
+                        <a href="#">About</a>
             <a href="#">Support</a>
             <a href="#">Privacy</a>
             <a href="#">DHS</a>
             <a href="#">TOS</a>
-        </div>
+        </footer>
 
     </body>
 </html>

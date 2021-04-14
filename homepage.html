@@ -6,8 +6,8 @@
         <link rel="stylesheet" href = "assets/css/general.css">
         <link rel="stylesheet" href = "assets/css/home.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="assets/js/authentication.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="import" href="homepage.html">
 
         <title>RefuFree</title>
     </head>
@@ -18,7 +18,14 @@
                 <a href="forum.html" id="middle">Forum</a>
                 <a href="chat.html" id="middle">Chat</a>
                 <a href="education.html" id="middle">Education</a>
-                <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=50px height=50px></a>
+
+
+                <div class = "dropdown">
+                    <button id = "profile" class="dropdownButton"><img src="assets/pictures/profile_picture.png" width=50px height=50px id="profile"></button>
+                    <div class ="menu">
+                        <a href="#">Text</a>
+                    </div>
+                </div>                
         </div>
         
         <div class="content">
