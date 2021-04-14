@@ -24,9 +24,10 @@
         <body>
             <div class="top-bar">
                 <h1>
-                    Forum
+                    Job Listing
                 </h1>
             </div>
+            <br>
             <div class="main">
                 <ol>
                     
@@ -40,7 +41,7 @@
                 for (let thread of threads) {
                     var html = `
                     <li class="row">
-                        <a href="http://127.0.0.1:5500/jobListingPost.html?${thread.id}">
+                        <a href="jobListingPost.html?${thread.id}">
                             <h4 class="title">
                                 ${thread.title}
                             </h4>
@@ -75,10 +76,12 @@
                 .top-bar {
                     background-color: skyblue;
                     padding: 0 40px;
+                    border-radius: 10px;
                 }
                 .main {
-                    background-color: #F6F6EF;
+                    background-color: #D6DBE0;
                     padding: 10px 15px;
+                    border-radius: 10px;
                 }
                 .row {
                     padding: 5px 0;
@@ -91,10 +94,12 @@
                 .timestamp {
                     padding-right: 10px;
                 }
+
             </style>
         
-
+        <br>
         <div class="bottombar">
+            
             <a href="#">About</a>
             <a href="#">Support</a>
             <a href="#">Privacy</a>
