@@ -47,6 +47,13 @@
     margin: 5%;
     width: auto;
 }
-button#save{
-    top: 0;
+#userDescription{
+    width: 99%;
+    height: 130px;
+    background-color: #CDEAE5;
+    padding: 5px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+    border: none;
+    font-size: medium;
 }
