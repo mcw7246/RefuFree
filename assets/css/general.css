@@ -78,7 +78,7 @@ body{
     align-items: center;
     display: inline-block;
     text-align: center;
-    bottom: 0;
+    bottom: auto;
 }
 .bottombar a {
     float: center;
