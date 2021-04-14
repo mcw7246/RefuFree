@@ -24,7 +24,7 @@
 
     <div class="top-bar">
         <h1>
-            Job Listing - Waiters Needed
+            Forum
         </h1>
     </div>
     <div class="main">
@@ -42,17 +42,27 @@
         var thread = threads.find(t => t.id == id);
         var header = document.querySelector('.header');
         var headerHtml = `
+            <br>
             <h4 class="title">
                 ${thread.title}
             </h4>
             <div class="bottom">
                 <p class="timestamp">
-                    ${new Date(thread.date).toLocaleString()}
+                    Bob Seagul
+                    ${new Date(thread.date).toLocaleString()}   
                 </p>
-                <p class="comment-count">
-                    ${thread.comments.length} comments
-                </p>
+                    <p class="comment-count">
+                        ${thread.comments.length} comments
+                    </p>
             </div>
+            <div class = "textarea">
+                <br>
+                <p> Hello, my name is Bob seagul. I am the proud owner of a local resturant called SkyHigh Burgers and Fries. 
+                    I am in need of some help and wish to hire two more waiters for mym business. Pay will start at $12 a hour + tips will be
+                    divided evenly with all staff. If you are willing to work and do not mind odd hours please direct message me. 
+                    If you have any further questions please reply below. </p>
+                <br>
+               
         `
         header.insertAdjacentHTML('beforeend', headerHtml)
 

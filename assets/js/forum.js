@@ -1,39 +1,20 @@
 var defaultThreads = [
     {
         id: 1,
-        title: "Thread 1",
-        author: "Aaron",
+        title: "Waiter Needed",
+        author: "Tester",
         date: Date.now(),
-        content: "Thread content",
+        content: "Test",
         comments: [
             {
-                author: "Jack",
+                author: "Jack H.",
                 date: Date.now(),
-                content: "Hey there"
+                content: "Hello, I am interested in this position."
             },
             {
-                author: "Arthur",
+                author: "Bob Seagul",
                 date: Date.now(),
-                content: "Hey to you too"
-            }
-        ]
-    },
-    {
-        id: 2,
-        title: "Thread 2",
-        author: "Aaron",
-        date: Date.now(),
-        content: "Thread content 2",
-        comments: [
-            {
-                author: "Jack",
-                date: Date.now(),
-                content: "Hey there"
-            },
-            {
-                author: "Arthur",
-                date: Date.now(),
-                content: "Hey to you too"
+                content: "Please direct message me!"
             }
         ]
     }
@@ -42,6 +23,7 @@ var defaultThreads = [
 var threads = defaultThreads
 if (localStorage && localStorage.getItem('threads')) {
     threads = JSON.parse(localStorage.getItem('threads'));
+    localStorage.clear();
 } else {
     threads = defaultThreads;
     localStorage.setItem('threads', JSON.stringify(defaultThreads));

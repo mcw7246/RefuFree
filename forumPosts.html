@@ -21,73 +21,79 @@
             <a href="education.html" id="middle">Education</a>
             <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=50px height=50px></a>
         </div>
+        <body>
+            <div class="top-bar">
+                <h1>
+                    Forum
+                </h1>
+            </div>
+            <div class="main">
+                <ol>
+                    
+
+                </ol>
+            </div>
+            <script src="assets\js\forum.js"></script>
+            <script>
+                console.log(threads);
+                var container = document.querySelector('ol');
+                for (let thread of threads) {
+                    var html = `
+                    <li class="row">
+                        <a href="http://127.0.0.1:5500/jobListingPost.html?${thread.id}">
+                            <h4 class="title">
+                                ${thread.title}
+                            </h4>
+                            <div class="bottom">
+                                <p class="timestamp">
+                                    ${new Date(thread.date).toLocaleString()}
+                                </p>
+                                <p class="comment-count">
+                                    ${thread.comments.length} comments
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    `
+                    container.insertAdjacentHTML('beforeend', html);
+                }
+            </script>
+            <style>
+                body {
+                    margin: 10px 60px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                h1, h4, ol {
+                    margin: 0;
+                }
+                p {
+                    margin: 5px 0;
+                }
+                .top-bar {
+                    background-color: skyblue;
+                    padding: 0 40px;
+                }
+                .main {
+                    background-color: #F6F6EF;
+                    padding: 10px 15px;
+                }
+                .row {
+                    padding: 5px 0;
+                }
+                .bottom {
+                    display: flex;
+                    color: grey;
+                    font-size: 12px;
+                }
+                .timestamp {
+                    padding-right: 10px;
+                }
+            </style>
         
-        <div class="content">
-            <div class="right-column">
-                <div class="posts">
-                    <p><b>Latest Posts</b></p>
-                    <div class = "Category">
-                        <br>
-                        <a><pre><b>   Waiters Needed 5:45 p.m.</b></pre></a>
-                    </div>
-                    <div class = "Category"> 
-                        <br>
-                        <a><pre><b>   Bob Brass - Officer AMA 5:43 p.m.</b></pre></a>
-                    </div>
-                    <div class = "Category">
-                        <br>
-                        <a><pre><b>   Local Meet up 7/3/21 5:40 p.m.</b></pre></a>
-                    </div>
-                </div>
-                <div class="categories">
-                    <p><b>Filter</b></p>
-                    <button id ="filterOption">Category</button>
-                    <button id ="filterOption">Date</button>
-                    <button id ="filterOption">Latest</button>
-                    <button id ="filterOption">User Group</button>
-                    <button id ="filterOption">Alphabetical</button>
-                    <button id ="filterOption">Oldest</button>
-                    <button id ="filterOption">User</button>
-                    <button id ="filterOption">Post Rank</button>
-                    <button id ="filterOption">Most Replies</button>
-                    <button id ="filterOption">Poll</button>
-                </div>
-            </div>
-            <div class="left-column">
-                <br>
-                <a><pre><b>   Post Name                                                                                                                     Aurthor & Date</b></pre></a>
-                
-                <div class = "Category">
-                    <br>
-                    <a href="http://127.0.0.1:5500/jobListingPost.html" class="postlink"><pre><b>  Waiters Needed                                                                                                        Bob Seagul 5:45 p.m.</b></pre></a>
-                </div>
-                <div class = "Category">
-                    <br>
-                    <a><pre><b>  Help Needed - Construction                                                                                           Harry Potter 5:40 p.m.</b></pre></a>
-                </div>
-                <div class = "Category"> 
-                    <br>
-                    <a><pre><b>  Secretary Position                                                                                                 Heather Flakes 5:43 p.m.</b></pre></a>
-                </div>
-                <div class = "Category"> 
-                    <br>
-                    <a><pre><b>  Bar Tender (Must be over 18)                                                                                        Ryan Seacrest 3:23 p.m.</b></pre></a>
-                </div>
-                <div class = "Category"> 
-                    <br>
-                    <a><pre><b>  Cashier needed - Wegmans                                                                                              Mr. Wegmans 4:50 p.m.</b></pre></a>
-                </div>
-                <div class = "Category"> 
-                    <br>
-                    <a><pre><b>  House Cleaner (Will pay handsomely)                                                                                      Bob Ross 4:50 p.m.</b></pre></a>
-                </div>
-                <div class = "Category"> 
-                    <br>
-                    <a><pre><b>  Super Top Secret Job                                                                                   FBI van around the corner 11:13 a.m.</b></pre></a>
-                </div>
-                
-            </div>
-        </div>
+
         <div class="bottombar">
             <a href="#">About</a>
             <a href="#">Support</a>
@@ -95,31 +101,7 @@
             <a href="#">DHS</a>"
             <a href="#">TOS</a>
         </div>
-        <script src="C:\Users\maxbl\Desktop\RefuFree\RefuFree\assets\js\forum.js"></script>
-        <script>
-            console.log(threads);
-            var container = document.querySelector('ol');
-            for (let thread of threads) {
-                var html = `
-                <li class="row">
-                    <a href="/thread.html?${thread.id}">
-                        <h4 class="title">
-                            ${thread.title}
-                        </h4>
-                        <div class="bottom">
-                            <p class="timestamp">
-                                ${new Date(thread.date).toLocaleString()}
-                            </p>
-                            <p class="comment-count">
-                                ${thread.comments.length} comments
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                `
-                container.insertAdjacentHTML('beforeend', html);
-            }
-        </script>
-
     </body>
 </html>
+
+
