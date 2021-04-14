@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8" content="width=divice-width">
+
+        <link rel="stylesheet" href = "assets/css/general.css">
+        <link rel="stylesheet" href = "assets/css/forum.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="import" href="homepage.html">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="assets\js\forum.js"></script>
+
+        <title>Post</title>
+    </head>
+
+<body>
+    <div class="topnav" id="myTopBar">
+        <a href="homepage.html" id="home"><img src="assets/pictures/logo_transparent.jpg" width=70px height=70px></a>
+        <a href="forum.html" id="middle">Forum</a>
+        <a href="chat.html" id="middle">Chat</a>
+        <a href="education.html" id="middle">Education</a>
+        <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=50px height=50px></a>
+    </div>
+
+    <div class="top-bar">
+        <h1>
+            Job Listing
+        </h1>
+    </div>
+    <div class="main">
+        <div class="header">
+        </div>
+        <textarea></textarea>
+        <br>
+        <button>add reply</button>
+        <div class="comments">
+        </div>
+    </div>
+    <script src="assets\js\forum.js"></script>
+    <script>
+        var id = window.location.search.slice(1);
+        var thread = threads.find(t => t.id == id);
+        var header = document.querySelector('.header');
+        var headerHtml = `
+            <br>
+            <h4 class="title">
+                ${thread.title}
+            </h4>
+            <div class="bottom">
+                <p class="timestamp">
+                    Bob Seagul
+                    ${new Date(thread.date).toLocaleString()}   
+                </p>
+                    <p class="comment-count">
+                        ${thread.comments.length} comments
+                    </p>
+            </div>
+            <div class = "textarea">
+                <br>
+                <p> Hello, my name is Bob seagul. I am the proud owner of a local resturant called SkyHigh Burgers and Fries. 
+                    I am in need of some help and wish to hire two more waiters for mym business. Pay will start at $12 a hour + tips will be
+                    divided evenly with all staff. If you are willing to work and do not mind odd hours please direct message me. 
+                    If you have any further questions please reply below. </p>
+                <br>
+               
+        `
+        header.insertAdjacentHTML('beforeend', headerHtml)
+
+        function addComment(comment) {
+            var commentHtml = `
+                <div class="comment">
+                    <div class="top-comment">
+                        <p class="user">
+                            ${comment.author}
+                        </p>
+                        <p class="comment-ts">
+                            ${new Date(comment.date).toLocaleString()}
+                        </p>
+                    </div>
+                    <div class="comment-content">
+                        ${comment.content}
+                    </div>
+                </div>
+            `
+            comments.insertAdjacentHTML('beforeend', commentHtml);
+        }
+
+        var comments = document.querySelector('.comments');
+        for (let comment of thread.comments) {
+            addComment(comment);
+        }
+
+        var btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            var txt = document.querySelector('textarea');
+            var comment = {
+                content: txt.value,
+                date: Date.now(),
+                author: 'Aaron'
+            }
+            addComment(comment);
+            txt.value = '';
+            thread.comments.push(comment);
+            localStorage.setItem('threads', JSON.stringify(threads));
+        })
+    </script>
+    <style>
+        body {
+            margin: 10px 60px;
+            
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        h1, h4, ol {
+            margin: 0;
+        }
+        p {
+            margin: 5px 0;
+        }
+        textarea {
+            width: 80%;
+            height: 80px;
+            border-radius: 10px;
+            
+        }
+        button {
+            background-color: #457B9D; /* Celadon Blue */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .top-bar {
+            background-color: skyblue;
+            padding: 15px 40px;
+            border-radius: 10px;
+        }
+        .main {
+            background-color: #E9ECEF;
+            padding: 10px 40px;
+            border-radius: 10px;
+        }
+        .comments {
+            margin: 40px 0;
+        }
+        .comment {
+            margin: 10px 0;
+        }
+        .row {
+            padding: 5px 0;
+        }
+        .bottom, .top-comment {
+            display: flex;
+            color: grey;
+            font-size: 12px;
+        }
+        .timestamp {
+            padding-right: 10px;
+        }
+        .comment-ts {
+            padding-left: 10px;
+        }
+    </style>
+
+    <div class="bottombar">
+        <a href="#">About</a>
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">DHS</a>
+        <a href="#">TOS</a>
+    </div>
+</body>

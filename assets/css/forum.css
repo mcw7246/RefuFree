@@ -13,6 +13,7 @@
     display: flex;
     flex-flow: column;
     border-radius: 25px;
+    text-size-adjust: auto;
     
 }
 
@@ -29,6 +30,7 @@
     border-radius: 25px;
     background-color: #E9ECEF;
     border-style: #DEE2E6 solid;
+    text-size-adjust: auto;
 }
 
 .left-column div{
@@ -58,6 +60,12 @@
     border-radius: 15px;
     background-color: #D6DBE0;
     border-style: #D6DBE0 solid;
+}
+.postlink{
+    text-decoration: none;
+    background-color: #D6DBE0;
+    size: 10px;
+    width: 100%;
 }
 
 button#latest{

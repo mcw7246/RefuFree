@@ -1,0 +1,148 @@
+Hello User
+Welcome to our Refu-Free prototype test
+
+To set up the test environment, we require you to follow the steps below.
+If any issues do arise, please do not hesitate to contact us @ mjb8818@rit.edu.
+
+1. 
+    To experience the prototype, we require you to install one piece of software:
+
+            Visual Studios Code:
+            Version: 1.55.2 (user setup)
+            This can be found here: https://code.visualstudio.com/?wt.mc_id=DX_841432
+            Please install this in a folder on your desktop or a location you can easily recall so that you can remove it after our test.
+
+2. 
+    After you successfully install Visual Studios Code, please download our source files located from MyCourses.
+    We advise you to export these files into a folder in a well-known location so that you can easily navigate to the folder.
+
+3. 
+    Please start Visual Studios Code and select the "Open Folder" option towards the bottom of the page.
+    Then after clicking, please locate the folder in which you exported the source files for Refu-Free.
+    After Locating, please open the project.
+
+4. 
+    We will require the use of an Extension called "Live Server" for our test; we will need you to install this locally.
+    After opening the project, you should see a few icons on the left-hand side of the page. 
+    Please navigate to the small squares icon "Extensions" and click it.
+    After doing so, please use the search bar at the top of the page and insert "Live Server."
+    A lot of options will appear, but we only require that exact Extension.
+    Please click on the small button called "install" on the bottom right-hand side under "Live Server."
+
+5. 
+    After you successfully install the "Live Server" Extension, you will need to restart Visual Studios Code.
+    To do this, we must navigate to the gear icon "Manage" at the bottom left-hand side of the page.
+    Please click on the gear icon and click the restart option.
+
+6. 
+    Now that the page has re-appeared, you should now be able to start the local server to conduct our testing.
+    To do this, you will have to navigate to the bottom right-hand side of the page. 
+    There will be text that states "Go Live," please click on that button, and a local host will be created a new browser page will appear with all of the HTML files.
+
+7. 
+    The setup is completed. To begin the test, please click on the login.html option and read the instructions below about the specific usage scenarios.
+    We ask you not to change the page settings or zoom into or out of a page during the testing.
+    
+
+ 
+
+
+There are four usage scenarios that you will be going through
+
+1. Login 
+    
+    1.
+    To complete this task, you must correctly input the username and password.
+    For this text, please use these parameters for your specific user group:
+
+        Local
+
+            username: Local
+            password: password
+            
+        Refugee
+
+            username: refugee
+            password: password
+
+    2. 
+    After inputting the information, please click on the sign-in button. 
+    If you correctly inputted the correct parameters, you will be transported to the lander page. 
+    If you incorrectly inputted the parameters, please double check you are typing the correct parameters.
+
+    3. 
+    Scenario Completed Please continue to scenario 2 Edit Profile.
+    
+2. Edit Profile
+
+    1.
+    After completing the first scenario, you will be at the homepage.
+    Please navigate to the right-hand side of the page and locate the grey user profile. Please click on the user icon.
+
+    2.
+    You will be taken to a new page that has been pre-populated with the user's data. Please familiarize yourself with the page and its details.
+
+    3.
+    After you have familiarized yourself, please navigate to the edit button on the top right-hand side of the page.
+    Please press the button. You will notice that the button has changed to say save. You have now accessed the edit mode correctly.
+
+    4.
+    You will notice that now you can edit the details of the user. Please go ahead and select a pre-populated element and edit it to your liking.
+
+    5.
+    After you completed that action, please locate the save button on the top right-hand side of the page. Please press that button.
+
+    6.
+    The newly inputted data will be visible and cannot be edited. You have successfully completed scenario 2 Edit Profile.
+    Please continue to scenario three, view a forum post.
+
+3. View a Forum post
+
+    1. 
+    From your current page, please navigate to the top of the page and find the button "Forum," after doing so, please press the button.
+
+    2.
+    A new page will appear, you will be able to see three main parts of the page: Latest posts, Filters, and Categories. 
+    Please familiarize yourself with the page.
+
+    3.
+    For this test, we will only have one active forum category and post. Please navigate to the category part of the page.
+    You will locate a link with the words Job Listing. Please press that link.
+
+    4.
+    This has brought you to the specific forum category "Job Listing." You will notice that the page has changed slightly. 
+    Now, only active posts will be present. There should be a post called "Waiters Needed." Please click on that thread.
+
+    5.
+    You have now made it to the forum post "Waiters Needed" in the category "Job Listing." Please familiarize yourself with the page. 
+    You will notice information on the post towards the top left-hand side of the page. Below that will be the body of the post. 
+    Below that, you will notice a text box with the button "Add Reply." Please insert a comment and press the "Add Reply" button.
+
+    6. 
+    You will now be able to see your new reply below in the comment section. 
+    You have successfully completed scenario 3, "View Forums." 
+
+    NOTE:
+    IF you are a Refugee Tester, please continue our final scenario, scenario 4: View a class.
+    IF you are a Local Tester, the following scenario will not be required. Thank you for helping test our application.
+
+4. View a class NOTE: This feature is only for Refugees
+
+    1.
+    From your current page, please navigate to the top of the page and find the button "Education," after doing so, please press the button.
+
+    2.
+    After doing so, you will be brought to a new page, Education. Please familiarize yourself with the page.
+
+    3.
+    After you have familiarized yourself with the page, please locate the class "English." It will be denoted with a photo.
+
+    4.
+    After you have located the class "English," please press that button.
+
+    5.
+    Now you are on the English class page; please familiarize yourself with the page.
+
+    6.
+    You have completed scenario 4. View a class. 
+    Thank you for participating in our testing.

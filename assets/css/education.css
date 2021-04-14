@@ -10,9 +10,6 @@
     border-radius: 10px;
     padding-bottom: 150px;
     
-
-}
-
 .currentclasses, .currentassignments, .review, .classresources{
     /* border: 3px solid ; */
     margin: 1% ;
@@ -39,7 +36,6 @@ h3 {
     border-radius: 10px;
     margin: 15px ;
     display: block;
-
 }
 
 .reviewSection {
@@ -56,8 +52,6 @@ h3 {
     margin-left: 15px ;
     margin-right: 15px ;
     margin-bottom: 15px ;
-
-
 }
 
 
@@ -76,10 +70,8 @@ h3 {
 }
 
 .classphoto {
-    
     width: 146px;
     height: 100px;
-    
 }
 
 #image {

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <meta charset="UTF-8" content="width=divice-width">
+
+        <link rel="stylesheet" href = "assets/css/general.css">
+        <link rel="stylesheet" href = "assets/css/forum.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="import" href="homepage.html">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <script src="assets/js/page.js"></script>
+
+        <title>RefuFree</title>
+    </head>
+
+    <body>
+        <div class="topnav" id="myTopBar">
+            <a href="homepage.html" id="home"><img src="assets/pictures/logo_transparent.jpg" width=70px height=70px></a>
+            <a href="forum.html" id="middle">Forum</a>
+            <a href="chat.html" id="middle">Chat</a>
+            <a href="education.html" id="middle">Education</a>
+            <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" width=50px height=50px></a>
+        </div>
+        <body>
+            <div class="top-bar">
+                <h1>
+                    Job Listing
+                </h1>
+            </div>
+            <br>
+            <div class="main">
+                <ol>
+                    
+
+                </ol>
+            </div>
+            <script src="assets\js\forum.js"></script>
+            <script>
+                console.log(threads);
+                var container = document.querySelector('ol');
+                for (let thread of threads) {
+                    var html = `
+                    <li class="row">
+                        <a href="jobListingPost.html?${thread.id}">
+                            <h4 class="title">
+                                ${thread.title}
+                            </h4>
+                            <div class="bottom">
+                                <p class="timestamp">
+                                    ${new Date(thread.date).toLocaleString()}
+                                </p>
+                                <p class="comment-count">
+                                    ${thread.comments.length} comments
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    `
+                    container.insertAdjacentHTML('beforeend', html);
+                }
+            </script>
+            <style>
+                body {
+                    margin: 10px 60px;
+                }
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                h1, h4, ol {
+                    margin: 0;
+                }
+                p {
+                    margin: 5px 0;
+                }
+                .top-bar {
+                    background-color: skyblue;
+                    padding: 0 40px;
+                    border-radius: 10px;
+                }
+                .main {
+                    background-color: #D6DBE0;
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                }
+                .row {
+                    padding: 5px 0;
+                }
+                .bottom {
+                    display: flex;
+                    color: grey;
+                    font-size: 12px;
+                }
+                .timestamp {
+                    padding-right: 10px;
+                }
+
+            </style>
+        
+        <br>
+        <div class="bottombar">
+            
+            <a href="#">About</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy</a>
+            <a href="#">DHS</a>"
+            <a href="#">TOS</a>
+        </div>
+    </body>
+</html>
+
+
