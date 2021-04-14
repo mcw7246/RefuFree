@@ -2,14 +2,12 @@
 <html lan="en">
     <head>
         <meta charset="UTF-8" content="width=divice-width">
-
         <link rel="stylesheet" href = "assets/css/general.css">
         <link rel="stylesheet" href = "assets/css/login.css">
+        <script type="text/javascript" src="assets/js/authentication.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="import" href="homepage.html">
-        <script src="assets/js/page.js"></script>
-
         <title>RefuFree</title>
+            
     </head>
 
     <body>
@@ -23,13 +21,17 @@
         
         <div class="content">
             <h1>Log into RefuFree</h1>
-            <label id="info">Username:</label>
-            <input type="text" id="info">
-            <br>
-            <label id="info">Password: </label>
-            <input type="password" id="info">
-            <br>
-            <button type="submit" id="info">Log In</button>
+
+            <form id="login">
+                <label>Username:</label>
+                <input type="text" id="username">
+                <br>
+                <label>Password: </label>
+                <input type="password" id="password">
+                <br>
+                <button type="button" onclick="authentication()"id="info">Log In</button>
+            </form>
+   
         </div>
 
         <div class="bottombar">
@@ -39,6 +41,5 @@
             <a href="#">DHS</a>
             <a href="#">TOS</a>
         </div>
-
     </body>
 </html>
