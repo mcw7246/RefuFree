@@ -21,22 +21,16 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
-<<<<<<< Updated upstream
 .topnav a#profile {
     float: right;
 }
 .profile{
     border-radius: 50%;
 }
-.topnav button#profile img{
-=======
-
 .topnav #profile {
     float: right;
 }
-
 .topnav #profile{
->>>>>>> Stashed changes
     border-radius: 50%;
 }
 .topnav a#home{
