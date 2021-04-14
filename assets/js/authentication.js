@@ -1,16 +1,27 @@
 const users = {"local" : "password", "refugee": "password"}
 var logged_in = false;
+
+
+window.onclick = function(event){
+    if(!event.target.matches('.dropdownButton')){
+        var dropdowns = document.getElementsByClassName('dropdownMenu');
+        for(var i = 0; i < dropdowns.length; i++){
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
 function authentication(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
     if ((users[username] != undefined) && (password == users[username] )){
         var url = location.href;
-        var newUrl = url.replace("/login.html", "/homepage.html");
+        var newUrl = url.replace("/login.html?", "/homepage.html");
+        window.location.href = newUrl;
         logged_in = true;
-        console.log(newUrl)
-        return window.location.replace(newUrl);
-        
     }
     else{
         console.log("Login unsuccessful.");
@@ -23,3 +34,4 @@ function authentication(){
         window.location = location.href;
     }
 }
+
