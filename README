@@ -37,14 +37,26 @@ If any issues do arise, please do not hesitate to contact us @ mjb8818@rit.edu.
 6. 
     Now that the page has re-appeared, you should now be able to start the local server to conduct our testing.
     To do this, you will have to navigate to the bottom right-hand side of the page. 
-    There will be text that states "Go Live," please click on that button, and a local host will be created a new browser page will appear with all of the HTML files.
+    There will be text that states "Go Live," please click on that button, and a local host will be created a new browser page 
+    will appear with all of the HTML files.
 
 7. 
     The setup is completed. To begin the test, please click on the login.html option and read the instructions below about the specific usage scenarios.
-    We ask you not to change the page settings or zoom into or out of a page during the testing.
-    
+    We ask you not to change the page settings or zoom into or out of a page during the testing. we recommend you use a 1900x1080 monitor for testing.
 
- 
+
+Content that will not be working for this prototype include:
+    -Chat functionality
+    -filter options for forums
+    -Only one category and post will be viewable
+    -Lcoal news links on homepage
+    -Quick-access tools on the bottom of the page
+    -profile photo 
+    -creation of a new user 
+    -forgotten password tool
+    -bottom bar of education will preset a few visual issues
+    -homepage and forum page may present visual issues. we recommend you use a 1900x1080 monitor for testing.
+    -seperate access for different user groups
 
 
 There are four usage scenarios that you will be going through
@@ -126,7 +138,7 @@ There are four usage scenarios that you will be going through
     IF you are a Refugee Tester, please continue our final scenario, scenario 4: View a class.
     IF you are a Local Tester, the following scenario will not be required. Thank you for helping test our application.
 
-4. View a class NOTE: This feature is only for Refugees
+4. View a class NOTE: This feature is only for Refugees, but for this prototype we will not have this differentiation.
 
     1.
     From your current page, please navigate to the top of the page and find the button "Education," after doing so, please press the button.
