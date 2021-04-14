@@ -4,18 +4,106 @@
     <head>
 
         <meta charset="UTF-8" content="width=divice-width">
-
-        <!-- <link rel="stylesheet" href = "assets/css/general.css"> -->
+        <link rel="stylesheet" href = "css/englishCourse.css">
 
 
     </head>
 
     <body>
-        <h1 text-align: center>ENGLISH</h1>
- 
+        
+        <div class="courseTitle">
+            <h1>ENGLISH</h1>
+        </div>
+
+        <div class="contentTab">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'ScheduleAndHw')">Schedule and Homework</button>
+                <button class="tablinks" onclick="openTab(event, 'Content')">Content</button>
+            </div>
+            
+            <div id="Overview" class="tabcontent">
+                <h3><u>Overview</u></h3>
+                <p>Welcome to English Class!!</p>
+            </div>
+            
+            <div id="ScheduleAndHw" class="tabcontent">
+                <h3><u>Schedule and Homework</u></h3>
+                <div id="Schedule">
+                    <table>
+                        <tr>
+                        <th id="week">Week</th>
+                        <th id="topics">Topics</th>
+                        <th id="activites">Activities</th>
+                        <th id="assignments">Assignments Due</th>
+                        </tr>
+                        <tr>
+                        <td headers="week">Week 1</td>
+                        <td headers="topics">Beginning Grammer</td>
+                        <td headers="activites">Looking at Nouns and Verbs</td>
+                        <td headers="assignments">Nouns and Verbs Assignment 1</td>
+                        </tr>
+                        <tr>
+                        <td headers="week">Week 2</td>
+                        <td headers="topics">Beginning Grammer</td>
+                        <td headers="activites">Cont. Nouns and Verbs</td>
+                        <td headers="assignments">Nouns and Verbs Assignment 2</td>
+                        </tr>
+                        <tr>
+                        <td headers="week">Week 3</td>
+                        <td headers="topics"> More Grammer</td>
+                        <td headers="activites">Adjectives and Adverbs</td>
+                        <td headers="assignments">Adjectives and Adverbs Assignment 1</td>
+                        </tr>
+                        <tr>
+                        <td headers="week">Week 3</td>
+                        <td headers="topics"> More Grammer</td>
+                        <td headers="activites">Cont. Adjectives and Adverbs</td>
+                        <td headers="assignments">Adjectives and Adverbs Assignment 2</td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+            </div>
+            
+            <div id="Content" class="tabcontent">
+                <h3><u>Content</u></h3>
+                <div class="cont">
+                    <p><a href="#">Week 1 Content</a></p>
+                    <p><a href="#">Week 2 Content</a></p>
+                    <p><a href="#">Week 3 Content</a></p>
+                    <p><a href="#">Week 4 Content</a></p>
+                </div>
+                
+
+            </div>
+
+
+
+        </div>
+
+
+        <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
     </body>
-
-
 
 
 </html>

@@ -84,7 +84,7 @@ body{
     align-items: center;
     display: inline-block;
     text-align: center;
-    bottom: auto;
+    bottom: 0;
 }
 .bottombar a {
     float: center;
