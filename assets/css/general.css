@@ -21,12 +21,16 @@ body{
     text-decoration: none;
     font-size: 17px;
 }
-
 .topnav a#profile {
     float: right;
 }
-
-.topnav a#profile img{
+.profile{
+    border-radius: 50%;
+}
+.topnav #profile {
+    float: right;
+}
+.topnav #profile{
     border-radius: 50%;
 }
 .topnav a#home{
@@ -35,6 +39,12 @@ body{
 .topnav a#middle{
     margin-left: auto;
     margin-right: auto;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 30px;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 .topnav a:hover {
     background-color: #F1FAEE;
@@ -44,19 +54,16 @@ body{
     background-color: #4CAF50;
     color: white;
 }
-  
 .topnav .icon {
     display: none;
 }
-  
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-}
-  
+}  
 @media screen and (max-width: 600px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
@@ -70,7 +77,6 @@ body{
       text-align: left;
     }
 }
-
 .bottombar{
     overflow: hidden;
     background-color: #457B9D;
@@ -92,4 +98,13 @@ body{
 .bottombar a:hover {
     background-color: #ddd;
     color: black;
+}
+#profile{
+    border-radius: 50%;
+}
+.menu{
+    display: none;
+}
+.dropdownButton:hover .menu{
+    display: block;
 }
