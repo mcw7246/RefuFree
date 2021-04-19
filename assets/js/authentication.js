@@ -19,7 +19,7 @@ function authentication(){
 
     if ((users[username] != undefined) && (password == users[username] )){
         var url = location.href;
-        var newUrl = url.replace("/login.html?", "/homepage.html");
+        var newUrl = url.replace("/login.html", "/homepage.html");
         window.location.href = newUrl;
         logged_in = true;
     }
