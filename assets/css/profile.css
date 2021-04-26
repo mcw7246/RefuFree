@@ -18,13 +18,14 @@
     margin-left: 5%;
     border-radius: 25px;
     text-align: center;
+    
 }
 .description{
     width: 100%;
     margin-top: 5px;
     height: 200px;
     background-color: #CDEAE5;
-    padding: 5px;
+    padding: 10px;
     border-radius: 25px;
     margin-bottom: 5px;
 }
@@ -46,6 +47,7 @@
     display: block;
     margin: 5%;
     width: auto;
+    
 }
 #userDescription{
     width: 99%;
@@ -56,4 +58,24 @@
     margin-bottom: 5px;
     border: none;
     font-size: medium;
+}
+
+div.settings {
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:10px;
+}
+div.settings label       { text-align:right; }
+div.settings label:after { content: ":"; }
+
+.button{
+background-color: #457B9D; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
 }

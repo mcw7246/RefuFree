@@ -24,17 +24,20 @@
 
             <form id="login">
                 <label>Username:</label>
-                <input type="text" id="username">
+                <input type="text" id="username"  class="userInput">
                 <br>
-                <label>Password: </label>
-                <input type="password" id="password">
+                <br>
+                <label>Password:</label>
+                <input type="password" id="password" class="userInput">
+                <br>
                 <br>
                 <button type="button" onclick="authentication()"id="info">Log In</button>
+                <br>
             </form>
    
         </div>
 
-        <div class="bottombar">
+        <div class="bottombar" style="position: fixed; bottom: 0; width: 100%;">
             <a href="#">About</a>
             <a href="#">Support</a>
             <a href="#">Privacy</a>
