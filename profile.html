@@ -11,7 +11,7 @@
         <title>RefuFree</title>
     </head>
 
-    <body>
+    <body style="background: #E9ECEF;">
         <div class="topnav" id="myTopBar">
             <a href="homepage.html" id="home"><img src="assets/pictures/logo_transparent.jpg" width=70px height=70px></a>
             <a href="forum.html" id="middle">Forum</a>
@@ -22,28 +22,28 @@
         
         <div class="content">
             <img src="assets/pictures/profile_picture.png" width=75px height=75px id="profilePic">
-            <button id="saveEdit" onclick="changeMode()" value="edit">Edit</button>
+           
             <div class="info">
-                <div class="forms">
-                    <div class="labels">
-                        <label>Name: </label>
-                        <label>Nickname: </label>
-                        <label>Username: </label>
-                        <label>Email: </label>
-                        <label>Age: </label>
-                        <label>Gender: </label>
+                <button class="button" style="float: right;" id="saveEdit" onclick="changeMode()" value="edit">Edit</button>
+                    <div class="settings" >
+                        <label>Name</label>
+                        <input type="text" id="name" class="userInput" value="Bob Marley" readonly/>
+
+                        <label>Nickname</label>
+                        <input type="text"id="nickname" class="userInput" value="Bobby" readonly/>
+
+                        <label>Username</label>
+                        <input type="text" id="username" class="userInput" value="therealbobmarley" readonly/>
+
+                        <label>Email</label>
+                        <input type="text" id="email" class="userInput" value="Bobmarley@gmail.com" readonly/>
+
+                        <label>Age</label>
+                        <input type="text" id="age" class="userInput" value="44" readonly/>
+
+                        <label>Gender</label>
+                        <input type="text" id="gender" class="userInput" value="Male" readonly />
                     </div>
-                    
-                    
-                    <div class="userInputs">
-                        <input type="text" id="name" class="userInput" value="Bob Marley" readonly>
-                        <input type="text" id="nickname" class="userInput" readonly>
-                        <input type="text" id="username" class="userInput" value="therealbobmarley" readonly>
-                        <input type="text" id="email" class="userInput" value="bobmarley1234@gmail.com" readonly>
-                        <input type="text" id="age" class="userInput" readonly>
-                        <input type="text" id="gender" class="userInput" readonly>
-                    </div>
-                </div>
                 <div class="description">
                     <h3>User description: </h3>
                     <textarea id="userDescription" class="userInput" readonly>I am a local to Rochester, NY. I have lived here for most of my life but traveled the world. I would love to get others aqcuiainted to the Rochester area as much as I can.</textarea>
@@ -53,7 +53,7 @@
 
         </div>
 
-        <footer class="bottombar">
+        <footer class="bottombar"  style="position: fixed; bottom: 0; width: 100%;">
             <a href="#">About</a>
             <a href="#">Support</a>
             <a href="#">Privacy</a>

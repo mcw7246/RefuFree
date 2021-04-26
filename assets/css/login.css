@@ -11,7 +11,18 @@ body{
 }
 label#info{
     padding: 5px;
+    
 }
 input#info{
     margin-bottom: 5px;
+    
+}
+
+.userInputs input{
+    display: block;
+    margin: 5%;
+    width: auto;
+    float: left;
+    align-content:flex-start;
+    border-radius: 15px;
 }

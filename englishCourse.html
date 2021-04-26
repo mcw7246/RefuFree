@@ -1,1 +1,133 @@
 <!DOCTYPE html>
+
+<html lan="en">
+    <head>
+
+        <meta charset="UTF-8" content="width=divice-width">
+        <link rel="stylesheet" href = "css/englishCourse.css">
+        <link rel="stylesheet" href = "assets/css/general.css">
+        <link rel="stylesheet" href = "assets/css/education.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="import" href="homepage.html">
+        <script src="assets/js/page.js"></script>
+
+
+    </head>
+
+    <body>
+        <div class="topnav" id="myTopBar">
+            <a href="homepage.html" id="home"><img src="assets/pictures/logo_transparent.jpg" width=70px height=70px></a>
+            <a href="forum.html" id="middle">Forum</a>
+            <a href="chat.html" id="middle">Chat</a>
+            <a href="education.html" id="middle">Education</a>
+            <a href="profile.html" id="profile"><img src="assets/pictures/profile_picture.png" id = "profile" width=50px height=50px></a>
+        </div>
+        
+        <div class="courseTitle">
+            <h1 style="text-align:center">ENGLISH</h1>
+        </div>
+
+        <div style="text-align:center" class="contentTab">
+            <div class="tab">
+                <button id="tabcontent" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+                <button id="tabcontent" onclick="openTab(event, 'ScheduleAndHw')">Schedule and Homework</button>
+                <button id="tabcontent" onclick="openTab(event, 'Content')">Content</button>
+            </div>
+            
+            <div id="Overview" class="tabcontent">
+                <h3 style="text-align:center"><u>Overview</u></h3>
+                <p>Welcome to English Class 101! </p>
+            </div>
+            
+            <div style="text-align:center" id="ScheduleAndHw" class="tabcontent">
+                <h3 style="text-align:center"><u>Schedule and Homework</u></h3>
+                <div id="ScheduleAndHw">
+                    <table style="margin-left:auto;margin-right:auto; padding: 10px;border-collapse: separate;
+                    border-spacing: 60px 15px;">
+                        <tr >
+                        <th>Week</th>
+                        <th>Topics</th>
+                        <th>Activities</th>
+                        <th>Assignments Due</th>
+                        </tr>
+
+                        <tr>
+                        <td class="td">Week 1</td>
+                        <td>Beginning Grammar</td>
+                        <td>Looking at Nouns and Verbs</td>
+                        <td>Nouns and Verbs Assignment 1</td>
+                        </tr>
+                        <tr>
+                        <td class="td">Week 2</td>
+                        <td>Beginning Grammar</td>
+                        <td>Cont. Nouns and Verbs</td>
+                        <td>Nouns and Verbs Assignment 2</td>
+                        </tr>
+                        <tr>
+                        <td class="td">Week 3</td>
+                        <td> More Grammar</td>
+                        <td>Adjectives and Adverbs</td>
+                        <td>Adjectives and Adverbs Assignment 1</td>
+                        </tr>
+                        <tr>
+                        <td class="td">Week 4</td>
+                        <td> More Grammar</td>
+                        <td>Cont. Adjectives and Adverbs</td>
+                        <td>Adjectives and Adverbs Assignment 2</td>
+                        </tr>
+                    </table>
+
+                </div>
+                
+            </div>
+            
+            <div id="Content" class="tabcontent">
+                <h3 style="text-align:center"><u>Content</u></h3>
+                <div style="text-align:center" class="cont">
+                    <p><a href="#">Week 1 Content</a></p>
+                    <p><a href="#">Week 2 Content</a></p>
+                    <p><a href="#">Week 3 Content</a></p>
+                    <p><a href="#">Week 4 Content</a></p>
+                    <br>
+                    <br>
+                </div>
+                
+
+            </div>
+
+
+
+        </div>
+
+
+        <script>
+            function openTab(evt, tabName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(tabName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
+
+        <div class="bottombar" style="position: fixed; bottom: 0; width: 100%;">
+            <a href="#">About</a>
+            <a href="#">Support</a>
+            <a href="#">Privacy</a>
+            <a href="#">DHS</a>
+            <a href="#">TOS</a>
+        </div>
+
+    </body>
+
+
+</html>
