@@ -165,6 +165,7 @@ There are four usage scenarios that you will be going through
     
     Noww thatyou are done, please unistall Visual studios and delete the folder that contains our source code.
     After doing so, please locate the Recycle bin icon on your desktop or search "Recycle bin" in the windows search bar at the bottom left of the page
+    and right click on it and select the empty recycle bin option to delete the files completely
 
     If you require help unistalling Visual Stidos please follow this link for further assistance 
     https://docs.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2019
