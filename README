@@ -1,3 +1,5 @@
+Final prototype version
+
 Hello User
 Welcome to our Refu-Free prototype test
 
@@ -5,7 +7,9 @@ To set up the test environment, we require you to follow the steps below.
 If any issues do arise, please do not hesitate to contact us @ mjb8818@rit.edu.
 
 1. 
-    To experience the prototype, we require you to install one piece of software:
+    To experience the prototype, we require you to use a Windows Operating System.
+    
+    We also ask you to install one piece of software:
 
             Visual Studios Code:
             Version: 1.55.2 (user setup)
@@ -22,27 +26,25 @@ If any issues do arise, please do not hesitate to contact us @ mjb8818@rit.edu.
     After Locating, please open the project.
 
 4. 
-    We will require the use of an Extension called "Live Server" for our test; we will need you to install this locally.
+    Due to the need to store temporary data on the clientside, We will require the use of an Extension called "Live Server."
+    For our test; we will need you to install this locally.
     After opening the project, you should see a few icons on the left-hand side of the page. 
     Please navigate to the small squares icon "Extensions" and click it.
     After doing so, please use the search bar at the top of the page and insert "Live Server."
     A lot of options will appear, but we only require that exact Extension.
     Please click on the small button called "install" on the bottom right-hand side under "Live Server."
 
-5. 
-    After you successfully install the "Live Server" Extension, you will need to restart Visual Studios Code.
-    To do this, we must navigate to the gear icon "Manage" at the bottom left-hand side of the page.
-    Please click on the gear icon and click the restart option.
-
 6. 
-    Now that the page has re-appeared, you should now be able to start the local server to conduct our testing.
-    To do this, you will have to navigate to the bottom right-hand side of the page. 
-    There will be text that states "Go Live," please click on that button, and a local host will be created a new browser page 
-    will appear with all of the HTML files.
+    Now that you have successfully installed "Live Server", you should now be able to start the local server to conduct our testing.
+    To do this, you will have to navigate to the bottom right-hand side of the page. There will be text that states "Go Live," 
+    please click on that button, and a server will be created. 
+    
+    *NOTE* This will open a new browser page and all of the HTML files will apear.  
 
 7. 
-    The setup is completed. To begin the test, please click on the login.html option and read the instructions below about the specific usage scenarios.
-    We ask you not to change the page settings or zoom into or out of a page during the testing. we recommend you use a 1900x1080 monitor for testing.
+    The setup is completed. To begin the test, please click on the login.html option on the browser. Please read the instructions below 
+    about the specific usage scenarios. We ask you not to change the page settings or zoom into or out of a page during the testing. 
+    we recommend you use a 1900x1080 monitor for testing.
 
 
 Content that will not be working for this prototype include:
@@ -57,6 +59,7 @@ Content that will not be working for this prototype include:
     -bottom bar of education will preset a few visual issues
     -homepage and forum page may present visual issues. we recommend you use a 1900x1080 monitor for testing.
     -seperate access for different user groups
+    -multi-language support
 
 
 There are four usage scenarios that you will be going through
@@ -153,8 +156,15 @@ There are four usage scenarios that you will be going through
     After you have located the class "English," please press that button.
 
     5.
-    Now you are on the English class page; please familiarize yourself with the page.
+    Now you are on the English class page; please familiarize yourself with the page by clicking on overview, schedule and homework, and content.
 
     6.
-    You have completed scenario 4. View a class. 
-    Thank you for participating in our testing.
+    You have completed the last scenario, scenario 4. View a class. 
+
+    Thank you for participating in our testing!
+    
+    Noww thatyou are done, please unistall Visual studios and delete the folder that contains our source code.
+    After doing so, please locate the Recycle bin icon on your desktop or search "Recycle bin" in the windows search bar at the bottom left of the page
+
+    If you require help unistalling Visual Stidos please follow this link for further assistance 
+    https://docs.microsoft.com/en-us/visualstudio/install/uninstall-visual-studio?view=vs-2019

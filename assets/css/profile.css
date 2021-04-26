@@ -1,5 +1,7 @@
 #profilePic{
     border-radius: 50%;
+    width: 12%;
+    height: 12%;
 }
 .info{
     margin-left: 5%;
